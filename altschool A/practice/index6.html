@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Form</title>
+  </head>
+  <body>
+    <header><h1>Application Form</h1></header>
+    <p>please fill in your details</p>
+    <main>
+      <form action="/practice/" method="post">
+        <fieldset>
+          <legend>personal information</legend>
+          <p>
+          <label for="first name">first name*</label>
+          <input type="text" placeholder="enter first name" required/>
+          </p>
+          <p>
+          <label for="last name">last name*</label>
+          <input type="text" name="" id=""placeholder="enter last name" required/>
+          </p>
+          <p>
+            <label for="phone number">phone number*</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{11,}" required />
+          </p>
+          <p>
+          <label for="email">email*</label>
+          <input type="text" placeholder="abc@gmail.com" required>
+          </p>
+          <p>
+            <label for="date of birth">Date of Birth</label>
+            <input type="date" required>
+          </p>
+          <p>
+            <label for="Religion">
+                Religion:
+            <label for="Religion">christianity<input type="radio" name="religion" required></label>
+            <label for="Religion">muslim<input type="radio" name="religion" required></label>
+            <label for="Religion">others<input type="radio" name="religion" required></label>
+            </label>
+            </p>
+            <fieldset>
+                <legend>Gender</legend>
+                  <label for="gender">male<input type="radio" name="gender" required></label>  
+                    <label for="gender">female<input type="radio" name="gender" required></label>
+            </fieldset><br>
+            <fieldset>
+                <legend>Educational Background</legend>
+                <label for="educational background">ssce leaver<input type="radio" required name="edu background"></label>
+                <label for="educational background">graduate<input type="radio" required name="edu background"></label>
+                <label for="educational background">postgraduate<input type="radio" required name="edu background"></label>
+            </fieldset><br>
+            <fieldset>
+                <legend>Area of residence</legend>
+                    <select name="Country" id="" required>
+                        <option value="country" selected disabled>Country</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Nigeria">Nigeria</option>
+                    </select>
+                </label>
+            </fieldset><br>
+            <fieldset>
+                <legend>Employment Status</legend>
+                <label for="Employment Status"></label>
+                <select name="Employment Status" id="">
+                <option value="Status" selected disabled>Status</option>
+                <option value="Employed">Employed</option>
+                <option value="Unemployed">Unemployed</option>
+                <option value="Self-employed">Self-employed</option>
+                </select>
+            </fieldset><br>
+            <fieldset>
+                <legend>choose school of study</legend>
+                <select>
+                    <option value="School of study" selected disabled>School of study</option>
+                    <option value="School of engineering">School of engineering</option>
+                    <option value="School of business">School of business</option>
+                    <option value="School of data">School of data</option>
+                </select>
+            </fieldset>
+        </fieldset>
+        <label for="scholarship/discount code">scholarship/discount code(optional)</label>
+        <input type="text" name="" id="" placeholder="enter discount code eg NACOS">
+        <p>by clicking continue, i agree to <a href="https://altschoolafrica.com/#">terms of use</a> and acknowledge that i have  read <a href="https://altschoolafrica.com/#">privacy and policy</a></p>
+        <button style="background-color: blue; border-radius: 12em; color: white;">submit</button>
+      </form>
+      <small>already have an account? <a href="https://portal.altschoolafrica.com/">sign in</a></small>
+    </main>
+  </body>
+</html>
